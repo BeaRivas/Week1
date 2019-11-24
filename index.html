@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style-list.css">
+ <script src="ppal-todolist.js"></script>
+  <title>To Do List</title>
+</head>
+<body>
+  <br>
+  <a href="calculate-bonus.html">Link to page Calculate Bonus</a>
+  <br>
+  <form action="" id="formList">
+    <!-- Filter and sort area-->
+    <br>
+    <table>
+      <tr>
+        <td>
+          Name
+        </td>
+        <td>
+            <br>
+          <input class="txtInput" id="textName" maxlength="100" required>
+        </td>
+        <td>
+          Filter by name
+          <input class="txtInput" id="textFilter" maxlength="100">
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Assignee
+        </td>
+        <td>
+          <select id="selectAssignee">
+          </select>
+        </td>
+
+        <td>
+          Filter by status
+          <select id="selectStatus"></select>
+        </td>
+        <td>
+          Type order by date
+          <select id="selectSort">
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <div>
+      <button  class="button1" id="saveTask"> <span>Add Task</span></button>
+    </div>
+    <!-- End filter and sort area-->
+  </form>
+  <br>
+  <div><button  class="button" id="newTask" onclick="activateFilters()"> <span>Add / Sort and Filter Task</span></button></div>
+  <!-- Task List-->
+  <ol id="listItems"></ol>
+</body>
+
+</html>

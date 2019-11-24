@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style-list.css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="calculate-bonus.js"></script>
+
+  <title>Calculate bonus</title>
+</head>
+
+<body>
+    <div class="divType">
+  <table>
+    <tr>
+      <td>Salary $</td>
+      <td><input class="txtInput" placeholder="Salary $" value="" id="inputSalary" aria-invalid="false" aria-required="false"></td>
+    </tr>
+    <tr>
+      <td>Years</td>
+      <td><input class="txtInput" placeholder="Years" value="" id="inputYears" aria-invalid="false" aria-required="false">
+      </td>
+    </tr>
+    <tr>
+      <td>Days</td>
+      <td><input class="txtInput" placeholder="Days" value="" id="inputDays" aria-invalid="false" aria-required="false"></td>
+    </tr>
+    <tr>
+      <td>Bonus $</td>
+      <td><input class="txtInput" placeholder="Bonus $" value="" id="inputBonus" aria-invalid="false" aria-required="false">
+      </td>
+    </tr>
+  </table>
+  <div>
+    <br>
+      <button class="button" id="btnCalculate" onclick="validateSalary()"> <span>Calculate</span></button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </div>
+</body>
+
+</html>
